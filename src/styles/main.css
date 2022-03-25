@@ -1,0 +1,15 @@
+*{box-sizing:border-box;}
+.card{
+  padding:20px;
+  background-color:red;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin:30px;
+  border-radius:20px;
+  
+}
+.card img{
+  width:50%;
+}
