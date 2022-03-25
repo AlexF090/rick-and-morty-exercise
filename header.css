@@ -1,0 +1,9 @@
+.header__container {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: blueviolet;
+}
