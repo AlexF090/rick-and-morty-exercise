@@ -1,0 +1,10 @@
+.footer {
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+	background-color: aliceblue;
+	border-top: 1px solid black;
+	padding: 10px 10px;
+}
