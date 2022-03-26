@@ -9,7 +9,7 @@ main {
 
 .card {
   padding: 20px;
-  background-color: red;
+  background-color: ;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
