@@ -90,19 +90,22 @@ function filterCharacter(character) {
 // if(isNameFilterMatching && isStatusFilterMatching){
 //   renderCharacter(character)
 // }
-
-    if (dropdown.value === character.status && character.name.includes(document.querySelector('#name').value)){
+// if(dropdown.value !== 'All' && document.querySelector('#name').value !== '') {
+// renderCharacter(character)
+// }
+    if (dropdown.value === 'All' && character.name.includes(document.querySelector('#name').value)){
       renderCharacter(character)
-      console.log('if')
     }
+if (dropdown.value === character.status && character.name.includes(document.querySelector('#name').value)){
+        renderCharacter(character)
+      }
     // else if (dropdown.value === character.status || character.name.includes(document.querySelector('#name').value)){
     //   renderCharacter(character)
     //   console.log('1. else if')
     // }
-    else if (dropdown.value === 'All'){
-      renderCharacter(character)
-      console.log('2. else if')
-}
+//     else if (dropdown.value === 'All'){
+//       renderCharacter(character)
+// }
 }
 
 
