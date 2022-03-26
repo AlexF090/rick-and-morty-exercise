@@ -65,3 +65,24 @@ function renderCharacter(character) {
   frame.append(createdInDatabase);
   document.querySelector("#container").append(frame);
 }
+
+//Top Button
+
+// const container = document.querySelector("#container");
+// window.addEventListener('scroll', () => {
+//   const topButton = document.querySelector('[data-btn=topButton]');
+//   topButton.window.
+// });
+
+window.addEventListener("scroll", () => {
+  var scroll = document.querySelector(".scrollTop");
+  scroll.classList.toggle("active", window.scrollY > 500);
+});
+
+const topButton = document.querySelector('[data-btn="topButton"]');
+topButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});

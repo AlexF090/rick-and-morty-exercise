@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+main {
+  position: relative;
+  margin-top: 12vh;
+}
 
 .card {
   padding: 20px;
@@ -22,15 +26,24 @@
   width: 50%;
 }
 
-.goTop {
+.scrollTop {
   background-color: blueviolet;
   position: fixed;
-  bottom: 8vh;
+  top: 85vh;
   right: 3vw;
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
   text-align: center;
   font-size: 1rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
   z-index: 30;
+}
+
+.scrollTop.active {
+  bottom: 0.4vh;
+  visibility: visible;
+  opacity: 1;
 }
