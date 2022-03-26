@@ -1,23 +1,28 @@
 * {
   box-sizing: border-box;
 }
-
+body{
+  background-color:#FFFFC7 ;
+}
 main {
   position: relative;
-  margin-top: 12vh;
+  margin-top: 13vh;
+  padding-bottom:10vh ;
+  
 }
 
 .card {
   padding: 20px;
-  background-color: ;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
+  text-align: center;
   align-items: center;
   gap: 0.5rem;
   flex-wrap: wrap;
   margin: 30px;
   border-radius: 20px;
+  background-color: #FF8E58;
 }
 .card img {
   /* display: flex;
@@ -27,7 +32,7 @@ main {
 }
 
 .scrollTop {
-  background-color: blueviolet;
+  background-color: #FFB344;
   position: fixed;
   top: 85vh;
   right: 3vw;
