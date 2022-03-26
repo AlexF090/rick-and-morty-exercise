@@ -37,23 +37,21 @@ function renderCharacter(character) {
   //Char Name
   name.textContent = character.name;
   //Char ID
-  id.textContent = character.id;
+  id.textContent = `ID: ${character.id}`;
   //Char status
-  status.textContent = character.status;
+  status.textContent = `Status: ${character.status}`;
   //Char species
-  species.textContent = character.species;
+  species.textContent = `Species: ${character.species}`;
   //Char type
-  type.textContent = character.type;
+  type.textContent = `Type: ${character.type}`;
   //Char gender
-  gender.textContent = character.gender;
+  gender.textContent = `Gender: ${character.gender}`;
   // originLocation
-  originLocation.textContent = character.origin.name;
+  originLocation.textContent = `Origin location: ${character.origin.name}`;
   //endpointLocation
-  endpointLocation.textContent = character.location.name;
-  // listOfEpisode
-//Later!!!
+  endpointLocation.textContent = `End point location: ${character.location.name}`;
   //createdInDatabase
-  createdInDatabase.textContent = character.created;
+  createdInDatabase.textContent = `Created in Database: ${character.created}`;
   frame.append(img);
   frame.append(id);
   frame.append(name);

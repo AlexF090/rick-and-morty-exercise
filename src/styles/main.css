@@ -1,9 +1,7 @@
 * {
   box-sizing: border-box;
 }
-body {
-  position: relative;
-}
+
 
 .card {
   padding: 20px;
@@ -26,12 +24,13 @@ body {
 
 .goTop {
   background-color: blueviolet;
-  position: absolute;
-  top: 83vh;
+  position: fixed;
+  bottom: 8vh;
   right: 3vw;
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
   text-align: center;
+  font-size: 1rem;
   z-index: 30;
 }
