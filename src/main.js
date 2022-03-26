@@ -12,18 +12,20 @@ button.addEventListener("click", () => {
 
   Promise.all(promises).then((pages) => {
     const characters = pages.flatMap((page) => page.results);
+    console.log(characters);
     characters.forEach(renderCharacter);
   });
 });
 
 function renderCharacter(character) {
-  const frame = document.createElement("div");
-  frame.classList.add("card");
+  const frame = document.createElement("li");
   const img = document.createElement("img");
-  img.setAttribute("src", character.image);
-  frame.append(img);
   const name = document.createElement("p");
+  frame.classList.add("card");
+  img.setAttribute("src", character.image);
+  img.setAttribute("alt", "Profile picture");
   name.textContent = character.name;
+  frame.append(img);
   frame.append(name);
   document.querySelector("#container").append(frame);
 }

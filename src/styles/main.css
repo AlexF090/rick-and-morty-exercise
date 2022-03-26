@@ -1,15 +1,21 @@
-*{box-sizing:border-box;}
-.card{
-  padding:20px;
-  background-color:red;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  flex-wrap:wrap;
-  margin:30px;
-  border-radius:20px;
-  
+* {
+  box-sizing: border-box;
 }
-.card img{
-  width:50%;
+.card {
+  padding: 20px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 30px;
+  border-radius: 20px;
+}
+.card img {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  width: 50%;
 }

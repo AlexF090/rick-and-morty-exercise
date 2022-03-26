@@ -9,19 +9,31 @@
   </head>
   <body>
     <header class="header__container">
-
       <img
         class="header__logo"
         src="/src/img/Sky-Ticket-Rick-and-Morty.webp"
         alt="Logo"
       />
-      <button class="header__filter-btn">Alive</button>
+      <form class="form" action="">
+      <select id="header__filter">
+        <option value="All">All</option>
+        <option value="Alive">Alive</option>
+        <option value="Dead">Dead</option>
+        <option value="Unknown">Unknown</option>
+      </select>
+      <input
+        type="search"
+        id="search"
+        class="search"
+        placeholder="search by name"
+      />
+      </form>
       <button id="fetch-data" type="button">Load data</button>
     </header>
     <main>
-      <article id="container">
+      <ul id="container">
         <section class="card">
-          <h2 calss="card__charName"></h2>
+          <!-- <h2 calss="card__charName"></h2>
           <h3 calss="card__id"></h3>
           <img class="card__charImg" src="#" alt="nameOfChar" />
           <h4 calss="card__charStatus"></h4>
@@ -32,23 +44,9 @@
           <p class="card_endpointLocation"></p>
           <p class="card__listOfEpisode"></p>
           <a class="card__url" href="#"></a>
-          <p class="createdInDatabase"></p>
+          <p class="createdInDatabase"></p> -->
         </section>
-        <section class="card">
-          <h2 calss="card__charName"></h2>
-          <h3 calss="card__id"></h3>
-          <img class="card__charImg" src="#" alt="nameOfChar" />
-          <h4 calss="card__charStatus"></h4>
-          <p class="card__charSpecies"></p>
-          <p class="card__charType"></p>
-          <p class="card__charGender"></p>
-          <p class="card__originLocation"></p>
-          <p class="card_endpointLocation"></p>
-          <p class="card__listOfEpisode"></p>
-          <a class="card__url" href="#"></a>
-          <p class="createdInDatabase"></p>
-        </section>
-      </article>
+      </ul>
     </main>
     <footer class="footer">
       Made with ♥ by ... Alexander, Katharina, Momchil, Zengqiang

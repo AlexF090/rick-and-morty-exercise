@@ -29,12 +29,18 @@
   margin-bottom: 1rem;
 }
 
-.header__filter-btn, .loaddata-btn {
-width: 6rem;
-height: 2rem;
-font-size: 1rem;
-padding-left: 0.25rem;
-padding-right: 0.25rem;
-padding-top: auto;
-padding-bottom: auto;
+.loaddata-btn {
+  width: 6rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
