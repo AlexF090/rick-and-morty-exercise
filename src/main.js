@@ -1,23 +1,36 @@
 const button = document.querySelector("#fetch-data");
+
+const dropdown = document.querySelector("#header__filter");
 const baseUrl = "https://rickandmortyapi.com/api/character?page=";
 const numPages = 5;
+
+
+// console.log(dropdown)
+
+// function filterStatus ()
+
+// Fetch data
 
 const urls = Array(numPages)
   .fill() // [undefined, undefined, ...]
   .map((_, index) => baseUrl + (index + 1));
 
 button.addEventListener("click", () => {
+  document.querySelector('#container').innerHTML='';
   const promises = urls.map((url) => fetch(url).then((res) => res.json()));
   console.log(promises);
 
   Promise.all(promises).then((pages) => {
     const characters = pages.flatMap((page) => page.results);
     console.log(characters);
-    characters.forEach(renderCharacter);
+    characters.forEach(filterCharacter);
   });
 });
 
+// Render Cards
+// character.status &&
 function renderCharacter(character) {
+  // if (dropdown.value === character.status && character.name.includes(document.querySelector('#name').value)){
   const frame = document.createElement("li");
   const img = document.createElement("img");
   const name = document.createElement("h2");
@@ -65,6 +78,34 @@ function renderCharacter(character) {
   frame.append(createdInDatabase);
   document.querySelector("#container").append(frame);
 }
+// }
+
+// Filter Cards
+
+function filterCharacter(character) {
+
+// const isNameFilterMatching = character.name.includes(document.querySelector('#name').value) || document.querySelector('#name') === '';
+// const isStatusFilterMatching = character.status
+
+// if(isNameFilterMatching && isStatusFilterMatching){
+//   renderCharacter(character)
+// }
+
+    if (dropdown.value === character.status && character.name.includes(document.querySelector('#name').value)){
+      renderCharacter(character)
+      console.log('if')
+    }
+    // else if (dropdown.value === character.status || character.name.includes(document.querySelector('#name').value)){
+    //   renderCharacter(character)
+    //   console.log('1. else if')
+    // }
+    else if (dropdown.value === 'All'){
+      renderCharacter(character)
+      console.log('2. else if')
+}
+}
+
+
 
 //Top Button
 
