@@ -7,8 +7,10 @@
     width: 100%;
     bottom: 0px;
     left: 0px;
-    background-color: aliceblue;
+    background-color: black;
     border-top: 1px solid black;
     padding: 10px 10px;
     text-align: center;
+    color: white;
+    font-size: 13px;
   }
