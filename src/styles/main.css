@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body{
-  background-color:#91C483 ;
+  /* background-color:#91C483 ; */
 }
 main {
   position: relative;
@@ -23,7 +23,7 @@ main {
   margin: 30px;
   border-radius: 20px;
   background-color: #FFE162;
-  box-shadow: 1px 5px 10px #EEEEEE;
+  box-shadow: 1px 5px 10px grey;
 }
 .card img {
   /* display: flex;
