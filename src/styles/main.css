@@ -3,6 +3,7 @@
 }
 body{
   /* background-color:#91C483 ; */
+ 
 }
 main {
   position: relative;
@@ -11,6 +12,14 @@ main {
   color:#333;
 }
 
+@media only screen and (min-width: 768px) {
+  .flexContainerCards{ padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
 .card {
   padding: 20px;
   display: flex;
@@ -29,7 +38,8 @@ main {
   /* display: flex;
   flex-direction: column;
   align-items: center; */
-  width: 50%;
+  width: 100%;
+  
 }
 
 .scrollTop {
