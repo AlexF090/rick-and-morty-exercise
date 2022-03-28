@@ -14,7 +14,7 @@
   height: 11.25vh;
   top: 0;
   left: 0;
-  background-color: #FFF8E5;
+  background-color: black;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   margin-left: auto;
@@ -25,12 +25,12 @@
 .header__logo {
   width: 4rem;
   height: 5rem;
-  border-radius: 50%;
+  border-radius: 40%;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.loaddata-btn {
+/* .loaddata-btn {
   width: 6rem;
   height: 2rem;
   font-size: 1rem;
@@ -38,8 +38,33 @@
   padding-right: 0.25rem;
   padding-top: auto;
   padding-bottom: auto;
+  border: none;
+} */
+.fetchdata-btn{
+  border: none;
+  background-color: white;
+  border-radius: 20%;
+  cursor:pointer;
+  /* box-shadow: 0px 2px 15px #FFE162; */
+  font-size: 15px;
+  padding: 13px;
+  
 }
+.character-filter{
+  border: none;
+  background-color: white;
+  border-radius: 2px;
+  height: 25px;
+  text-align: center;
 
+}
+.search{
+  border: none;
+  border-radius: 2px;
+  height: 25px;
+  text-align: center;
+  margin-top: 5px;
+}
 .form {
   display: flex;
   flex-direction: column;

@@ -2,13 +2,13 @@
   box-sizing: border-box;
 }
 body{
-  background-color:#FFFFC7 ;
+  /* background-color:#91C483 ; */
 }
 main {
   position: relative;
   margin-top: 13vh;
   padding-bottom:10vh ;
-  
+  color:#333;
 }
 
 .card {
@@ -22,7 +22,8 @@ main {
   flex-wrap: wrap;
   margin: 30px;
   border-radius: 20px;
-  background-color: #FF8E58;
+  background-color: #FFE162;
+  box-shadow: 1px 5px 10px grey;
 }
 .card img {
   /* display: flex;
@@ -32,7 +33,7 @@ main {
 }
 
 .scrollTop {
-  background-color: #FFB344;
+  background-color: #FF6464;
   position: fixed;
   top: 85vh;
   right: 3vw;
@@ -45,6 +46,9 @@ main {
   opacity: 0;
   transition: 0.5s;
   z-index: 30;
+  border: none;
+  color: white;
+  box-shadow: 1px 2px 5px #EEEEEE;
 }
 
 .scrollTop.active {
